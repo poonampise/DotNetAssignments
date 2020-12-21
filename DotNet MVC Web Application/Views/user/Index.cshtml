@@ -1,0 +1,20 @@
+﻿@model WebApplication2.Models.Users
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<h1>Welcome  @Session["logged_username"]  </h1>
+<br>
+
+<h2> Full Name @Session["logged_FullName"] </h2>
+
+
+<br>
+
+<br>
+<br>
+<a href="/user/logout"><button type="button" class="btn btn-danger">Logout</button></a>
+<a href="/user/updation"><button type="button" class="btn btn-primary">Update Profile </button></a>
